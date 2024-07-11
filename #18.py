@@ -13,6 +13,7 @@
 # In particular, you('ll want to use the "threading" library (and the "Thread" class within it), including the "start" and "join" methods.  '
 # 'You')ll also probably want to use a "Queue" (in the "queue" module) to synchronize the information you've found so far.
 
+#you will need files with words as "foo/bar/any_text_files.txt
 
 import glob
 import threading
