@@ -23,7 +23,10 @@
 
 
 def create_password_checker(min_uppercase,min_lowercase,min_punctuation,min_digits):
+    
     def password_checker(psw):
+
+        
         dct= {'lowercase':0,'uppercase':0,'punctuation':0,'digits':0}
         punctuation ='!@#$%^&*()_+=-.,'
         letters = 'abcdefghijklmnopqrsutvwxyz'
@@ -45,7 +48,7 @@ def create_password_checker(min_uppercase,min_lowercase,min_punctuation,min_digi
         tp = tuple()
 
         for i in dct.values():
-            if i != 0:
+            if i < 0:
                 tp = (False,dct)
                 return tp
             else:
